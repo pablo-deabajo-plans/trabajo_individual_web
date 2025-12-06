@@ -1,0 +1,86 @@
+:root {
+    /* En este apartado definimos los colores que vamos a utilizar a lo largo de la pagina
+    y asi no tenemos que buscar que color es cada vez. Simplemente vinculamos un color a un nombre*/
+
+    /*  COSAS A TENER EN CUENTA:
+        1. El tamaño en rem o %
+        2. Los colores en rgb
+        bg = background
+        h = hover
+        l = letra
+    */
+    /* Header y Footer*/
+    --color-bg-HF: rgb(48, 71, 94);
+    --color-l-HF: rgb(255, 255, 255);
+    --color-bg-nav: rgb(34, 40, 49);
+    --color-h-nav: rgb(240, 84, 84); /* Color al pasar el raton por encima de los enlaces del menu*/
+
+    /* Main*/
+    --color-bg-main: rgb(245, 245, 245);
+}
+
+/* Estilos globales para el body*/
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el header */
+header {
+    background: #30475e;
+    color: var(--color-l-HF);
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.12rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    background: var(--color-bg-nav);
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+}
+
+nav ul li a {
+    color: var(--color-l-HF);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color .2s;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: var(--color-h-nav);
+    color: var(--color-l-HF);
+}
+
+/* Estilos para el main */
+main {
+    flex: 1;
+    padding: 2rem;
+    background: var(--color-bg-main);
+}
+
+/* Estilos para el footer */
+footer {
+    background: var(--color-bg-HF);
+    color: var(--color-l-HF);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: var(--color-l-HF);
+}
