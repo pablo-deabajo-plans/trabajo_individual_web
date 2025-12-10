@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
+    <link rel="stylesheet" href="../estilos_sec/header-footer.css">
+    <link rel="stylesheet" href="../estilos_sec/contact.css">
 </head>
 <body>
-    <h1>Pagina contact.html</h1>
-    <p>incluirá un formulario fácil de usar para ponerse en contacto con usted. 
-        Este formulario está diseñado sin ningún elemento de script que envíe o 
-        guarde el contenido ingresado.</p>
+    <header>
+        <h1>Página Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre mi</a></li>
+                <li><a href="degree.html">Ing. Informática</a></li>
+                <li><a href="topic.html">Sporting de Gijón</a></li>
+                <li><a href="net.html">Nuestra Red</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <main>
+        <section>
+            <h2>📧 Contacto</h2>
+            <p>¿Tienes alguna pregunta, propuesta o simplemente quieres saludar? Te invito a que te comuniques conmigo a través de este formulario. Responderé lo antes posible.</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (Opcional)</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+34 123 456 789">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="¿Cuál es el asunto?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>📍 Otras formas de contacto</h2>
+            <p><strong>Email:</strong> pablo.deabajo@ufv.es</p>
+            <p><strong>Universidad:</strong> Universidad Francisco de Vitoria - Escuela Politécnica Superior</p>
+            <p>En mis redes sociales que las encontraras en el apartado, Sobre mi</p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Pablo de Abajo - 2025</p>
+    </footer>
 </body>
 </html>

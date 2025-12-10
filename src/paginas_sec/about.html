@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-</head>
-<body>
-    <h1>Pagina about.html</h1>
-    <p>Incluirá una breve descripción sobre ti inspirada en las unidades 2 y 3 (Módulo 1), 
-        un currículum vitae, dos imágenes y algunos enlaces a cuentas de redes sociales.</p>
-</body>
+    <link rel="stylesheet" href="../estilos_sec/header-footer.css" />
+    <link rel="stylesheet" href="../estilos_sec/about.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Página About</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./degree.html">Ing. Informática</a></li>
+          <li><a href="./topic.html">Sporting de Gijón</a></li>
+          <li><a href="./net.html">Nuestra Red</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="about-hero">
+        <img
+          src="../imagenes/perfil.jpg"
+          alt="Pablo de Abajo"
+          class="foto-perfil"
+        />
+        <h1>Pablo de Abajo</h1>
+        <p class="carrera">Estudiante de Ingeniería Informática - UFV</p>
+      </div>
+
+      <section>
+        <h2>🎓 Educación</h2>
+        <p>Formación académica los últimos años</p>
+        <table class="educacion-table">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Años</th>
+              <th>Institución</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grado en Ingeniería Informática</td>
+              <td>2025</td>
+              <td>Universidad Francisco de Vitoria (UFV)</td>
+            </tr>
+            <tr>
+              <td>FP Administración de Sistemas Informáticos en Red</td>
+              <td>2023-2025</td>
+              <td>IES Maria de Zayas y Sotomayor</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>📸 Mis fotos</h2>
+        <p>Momentos especiales de mi día a día</p>
+        <div class="galeria">
+          <img src="../imagenes/Foto1.jpg" alt="Con mis amigos" />
+          <img src="../imagenes/Foto2.webp" alt="Yo ganando al tenis" />
+          <img
+            src="../imagenes/Foto3.jpg"
+            alt="Yo marcando el gol del mundial 2010"
+          />
+          <img
+            src="../imagenes/Foto4.avif"
+            alt="Yo en mis primeros conciertos"
+          />
+          <img
+            src="../imagenes/Foto5.jpg"
+            alt="Yo ganando una pelea de boxeo"
+          />
+          <img 
+            src="../imagenes/Foto6.avif" 
+            alt="Yo y mis panas como monjes shaolin" />
+        </div>
+      </section>
+
+      <section>
+        <h2>🌐 Redes Sociales</h2>
+        <p>¡Sígueme en mis perfiles profesionales y personales!</p>
+        <div class="redes-grid">
+          <a
+            href="https://github.com/pablodeabajo"
+            class="red-social"
+            target="_blank"
+          >
+            <div class="red-icon">👨‍💻</div>
+            <strong>GitHub</strong>
+            <span>pablodeabajo</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/pablodeabajo"
+            class="red-social"
+            target="_blank"
+          >
+            <div class="red-icon">💼</div>
+            <strong>LinkedIn</strong>
+            <span>pablodeabajo</span>
+          </a>
+          <a
+            href="https://instagram.com/pablodeabajo"
+            class="red-social"
+            target="_blank"
+          >
+            <div class="red-icon">📷</div>
+            <strong>Instagram</strong>
+            <span>pablodeabajo</span>
+          </a>
+          <a href="https://facebook.com/pablodeabajo" class="red-social">
+            <div class="red-icon">📘</div>
+            <strong>Facebook</strong>
+            <span>pablodeabajo</span>
+          </a>
+          <a href="https://x.com/pablodeabajo" class="red-social">
+            <div class="red-icon">🐦</div>
+            <strong>Twitter</strong>
+            <span>pablodeabajo</span>
+          </a>
+          <a href="mailto:0000000@alumnos.ufv.es" class="red-social">
+            <div class="red-icon">✉️</div>
+            <strong>Email</strong>
+            <span>0000000@alumnos.ufv.es</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Cualquier duda o pregunta aqui esta mi contacto:
+        <a href="contact.html">Contacto</a>
+      </p>
+      <p>Pablo de Abajo - 2025</p>
+    </footer>
+  </body>
 </html>

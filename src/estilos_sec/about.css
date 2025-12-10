@@ -1,0 +1,218 @@
+/* Estilos específicos para About - Siguiendo estructura del index.html */
+
+:root {
+    /* Main*/
+    --color-bg-main: rgb(245, 245, 245);
+    --color-primary: rgb(240, 84, 84);
+    --color-text: rgb(51, 51, 51);
+    --color-text-light: rgb(102, 102, 102);
+    
+    /* Secciones */
+    --color-bg-section: rgb(255, 255, 255);
+    --color-border-section: rgb(238, 238, 238); 
+    --color-l-section-link-h: rgb(255, 255, 255); 
+    
+    /* Sombras */
+    --shadow-header: rgba(0, 0, 0, 0.15);
+    --shadow-section: rgba(0, 0, 0, 0.08);
+    --shadow-section-h: rgba(0, 0, 0, 0.12);
+    
+    /* About específico */
+    --color-hero-gradient-start: rgb(240, 84, 84);
+    --color-hero-gradient-end: rgb(200, 70, 70);
+    --color-border-foto-perfil: rgba(255, 255, 255, 0.3);
+    --color-bg-table: rgb(248, 249, 250);
+    --shadow-foto-perfil: rgba(0, 0, 0, 0.3);
+    --shadow-galeria: rgba(0, 0, 0, 0.15);
+    --shadow-galeria-h: rgba(0, 0, 0, 0.25);
+    --shadow-redes: rgba(240, 84, 84, 0.4);
+    --color-bg-table-hover: rgba(240, 84, 84, 0.05);
+}
+
+/* Estilos globales del main */
+main {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--color-bg-main);
+}
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
+    color: var(--color-bg-section);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow-section);
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.foto-perfil {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 0.375rem solid var(--color-border-foto-perfil);
+    margin: 0 auto 1.5rem;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 0.625rem 2.5rem var(--shadow-foto-perfil);
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero .carrera {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+/* Secciones - Mismo estilo que index.html */
+section {
+    background: var(--color-bg-section);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px var(--shadow-section);
+    border-top: 4px solid var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px var(--shadow-section-h);
+}
+
+section h2 {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-border-section);
+}
+
+section p {
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Tabla Educación */
+.educacion-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: var(--color-bg-table);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow-section);
+}
+
+.educacion-table th,
+.educacion-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border-section);
+}
+
+.educacion-table th {
+    background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
+    color: var(--color-bg-section);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+}
+
+.educacion-table tr:last-child td {
+    border-bottom: none;
+}
+
+.educacion-table tr:hover {
+    background: var(--color-bg-table-hover);
+}
+
+.educacion-table td {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* Galería de imágenes - 2 filas x 3 columnas */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.galeria img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px var(--shadow-galeria);
+    transition: all 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px var(--shadow-galeria-h);
+}
+
+/* Redes Sociales - 2 filas x 3 columnas */
+.redes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.red-social {
+    background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
+    color: var(--color-bg-section);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 4px 12px var(--shadow-section);
+}
+
+.red-social:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px var(--shadow-redes);
+}
+
+.red-icon {
+    font-size: 2.5rem;
+}
