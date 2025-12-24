@@ -1,29 +1,24 @@
 /* Estilos para Contact - Formulario de Contacto */
 
 :root {
-    /* Main*/
     --color-bg-main: rgb(245, 245, 245);
     --color-primary: rgb(240, 84, 84);
     --color-text: rgb(51, 51, 51);
     --color-text-light: rgb(102, 102, 102);
     
-    /* Secciones */
     --color-bg-section: rgb(255, 255, 255);
     --color-border-section: rgb(238, 238, 238);
     --color-l-section-link-h: rgb(255, 255, 255);
     
-    /* Sombras */
     --shadow-header: rgba(0, 0, 0, 0.15);
     --shadow-section: rgba(0, 0, 0, 0.08);
     --shadow-section-h: rgba(0, 0, 0, 0.12);
     
-    /* Contact específico */
     --shadow-input: rgba(0, 0, 0, 0.05);
     --color-input-border: rgb(218, 218, 218);
     --color-input-focus: rgb(240, 84, 84);
 }
 
-/* Estilos globales del main */
 main {
     flex: 1;
     max-width: 1000px;
@@ -32,7 +27,6 @@ main {
     background: var(--color-bg-main);
 }
 
-/* Formulario Section */
 section {
     background: var(--color-bg-section);
     margin-bottom: 2rem;
@@ -68,7 +62,6 @@ section strong {
     color: var(--color-primary);
 }
 
-/* Formulario */
 form {
     display: grid;
     gap: 1.5rem;
@@ -139,24 +132,4 @@ button[type="submit"]:hover {
 
 button[type="submit"]:active {
     transform: translateY(0);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    section {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    form {
-        gap: 1rem;
-    }
-
-    button[type="submit"] {
-        align-self: stretch;
-    }
 }

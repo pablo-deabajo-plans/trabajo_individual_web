@@ -1,30 +1,25 @@
 /* Estilos para Topic - Real Sporting de Gijón */
 
 :root {
-    /* Main*/
     --color-bg-main: rgb(245, 245, 245);
     --color-primary: rgb(240, 84, 84);
     --color-text: rgb(51, 51, 51);
     --color-text-light: rgb(102, 102, 102);
     
-    /* Secciones */
     --color-bg-section: rgb(255, 255, 255);
     --color-border-section: rgb(238, 238, 238);
     --color-l-section-link-h: rgb(255, 255, 255);
     
-    /* Sombras */
     --shadow-header: rgba(0, 0, 0, 0.15);
     --shadow-section: rgba(0, 0, 0, 0.08);
     --shadow-section-h: rgba(0, 0, 0, 0.12);
     
-    /* Topic específico */
     --color-hero-gradient-start: rgb(240, 84, 84);
     --color-hero-gradient-end: rgb(48, 71, 94);
     --color-stat-gradient: rgba(240, 84, 84, 0.1);
     --shadow-stat: rgba(240, 84, 84, 0.15);
 }
 
-/* Estilos globales del main */
 main {
     flex: 1;
     max-width: 1000px;
@@ -33,7 +28,6 @@ main {
     background: var(--color-bg-main);
 }
 
-/* Hero Section */
 .sporting-hero {
     text-align: center;
     background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
@@ -73,7 +67,6 @@ main {
     margin: 0;
 }
 
-/* Secciones - Mismo estilo que index.html */
 section {
     background: var(--color-bg-section);
     margin-bottom: 2rem;
@@ -112,15 +105,14 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* Stats Grid */
-.stats-grid {
+.estadisticas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.stat-card {
+.stat {
     background: linear-gradient(135deg, var(--color-hero-gradient-start), rgb(200, 50, 50));
     color: var(--color-bg-section);
     padding: 1.5rem;
@@ -131,25 +123,24 @@ section p {
     transition: all 0.3s ease;
 }
 
-.stat-card:hover {
+.stat:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px var(--shadow-section-h);
 }
 
-.stat-numero {
+.numero {
     font-size: 2rem;
     display: block;
     margin: 0 0 0.5rem 0;
 }
 
-.stat-card p {
+.stat p {
     margin: 0;
     font-size: 0.95rem;
     color: var(--color-bg-section);
 }
 
-/* Palmarés List */
-.palmares-list {
+.titulos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
@@ -178,25 +169,4 @@ section p {
     font-size: 0.95rem;
     margin: 0.5rem 0 0 0;
     color: var(--color-text-light);
-}
-
-/* Mareona Section */
-.mareona {
-    background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
-    color: var(--color-bg-section);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    text-align: center;
-    margin-top: 1.5rem;
-    box-shadow: 0 4px 12px var(--shadow-stat);
-}
-
-.mareona h3 {
-    color: var(--color-bg-section);
-    font-size: 1.8rem;
-}
-
-.mareona p {
-    color: var(--color-bg-section);
-    font-size: 1.05rem;
 }

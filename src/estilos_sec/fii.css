@@ -1,23 +1,19 @@
 /* Estilos para FII - Fundamentos de Ingeniería Informática */
 
 :root {
-    /* Main*/
     --color-bg-main: rgb(245, 245, 245);
     --color-primary: rgb(240, 84, 84);
     --color-text: rgb(51, 51, 51);
     --color-text-light: rgb(102, 102, 102);
     
-    /* Secciones */
     --color-bg-section: rgb(255, 255, 255);
     --color-border-section: rgb(238, 238, 238);
     --color-l-section-link-h: rgb(255, 255, 255);
     
-    /* Sombras */
     --shadow-header: rgba(0, 0, 0, 0.15);
     --shadow-section: rgba(0, 0, 0, 0.08);
     --shadow-section-h: rgba(0, 0, 0, 0.12);
     
-    /* FII específico */
     --color-hero-gradient-start: rgb(48, 71, 94);
     --color-hero-gradient-end: rgb(240, 84, 84);
     --color-item-bg: rgb(248, 249, 250);
@@ -25,7 +21,6 @@
     --shadow-card: rgba(240, 84, 84, 0.15);
 }
 
-/* Estilos globales del main */
 main {
     flex: 1;
     max-width: 1000px;
@@ -34,7 +29,6 @@ main {
     background: var(--color-bg-main);
 }
 
-/* Hero Section */
 .fii-hero {
     text-align: center;
     background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
@@ -90,7 +84,6 @@ main {
     line-height: 1.6;
 }
 
-/* Secciones */
 section {
     background: var(--color-bg-section);
     margin-bottom: 2rem;
@@ -139,7 +132,6 @@ section strong {
     color: var(--color-primary);
 }
 
-/* Lista de contenidos */
 .contenido-list {
     list-style: none;
     padding-left: 0;
@@ -161,7 +153,6 @@ section strong {
     color: var(--color-primary);
 }
 
-/* Grids Objetivos */
 .objetivos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -193,7 +184,6 @@ section strong {
     color: var(--color-text);
 }
 
-/* Grids Resultados */
 .resultados-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -225,7 +215,6 @@ section strong {
     color: var(--color-text);
 }
 
-/* Grid Evaluación */
 .evaluacion-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -255,59 +244,4 @@ section strong {
     margin-bottom: 0;
     font-size: 0.95rem;
     color: var(--color-text);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    .fii-hero {
-        padding: 2rem 1rem;
-    }
-
-    .fii-hero h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    section h2 {
-        font-size: 1.3rem;
-    }
-
-    section h3 {
-        font-size: 1.1rem;
-    }
-
-    .objetivos-grid,
-    .resultados-grid,
-    .evaluacion-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .objetivo-item,
-    .resultado-item,
-    .evaluacion-item {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .fii-hero h1 {
-        font-size: 1.8rem;
-    }
-
-    section p {
-        font-size: 1rem;
-    }
-
-    .contenido-list li {
-        font-size: 0.95rem;
-    }
 }

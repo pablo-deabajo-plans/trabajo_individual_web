@@ -1,23 +1,19 @@
 /* Estilos específicos para About - Siguiendo estructura del index.html */
 
 :root {
-    /* Main*/
     --color-bg-main: rgb(245, 245, 245);
     --color-primary: rgb(240, 84, 84);
     --color-text: rgb(51, 51, 51);
     --color-text-light: rgb(102, 102, 102);
     
-    /* Secciones */
     --color-bg-section: rgb(255, 255, 255);
     --color-border-section: rgb(238, 238, 238); 
     --color-l-section-link-h: rgb(255, 255, 255); 
     
-    /* Sombras */
     --shadow-header: rgba(0, 0, 0, 0.15);
     --shadow-section: rgba(0, 0, 0, 0.08);
     --shadow-section-h: rgba(0, 0, 0, 0.12);
     
-    /* About específico */
     --color-hero-gradient-start: rgb(240, 84, 84);
     --color-hero-gradient-end: rgb(200, 70, 70);
     --color-border-foto-perfil: rgba(255, 255, 255, 0.3);
@@ -29,7 +25,6 @@
     --color-bg-table-hover: rgba(240, 84, 84, 0.05);
 }
 
-/* Estilos globales del main */
 main {
     flex: 1;
     max-width: 1000px;
@@ -38,7 +33,6 @@ main {
     background: var(--color-bg-main);
 }
 
-/* Hero Section */
 .about-hero {
     text-align: center;
     background: linear-gradient(135deg, var(--color-hero-gradient-start), var(--color-hero-gradient-end));
@@ -90,7 +84,6 @@ main {
     z-index: 1;
 }
 
-/* Secciones - Mismo estilo que index.html */
 section {
     background: var(--color-bg-section);
     margin-bottom: 2rem;
@@ -122,7 +115,6 @@ section p {
     margin-bottom: 1rem;
 }
 
-/* Tabla Educación */
 .educacion-table {
     width: 100%;
     border-collapse: collapse;
@@ -161,7 +153,6 @@ section p {
     font-weight: 500;
 }
 
-/* Galería de imágenes - 2 filas x 3 columnas */
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -183,7 +174,6 @@ section p {
     box-shadow: 0 8px 25px var(--shadow-galeria-h);
 }
 
-/* Redes Sociales - 2 filas x 3 columnas */
 .redes-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

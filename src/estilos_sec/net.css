@@ -1,29 +1,24 @@
 /* Estilos para Net - Nuestra Red */
 
 :root {
-    /* Main*/
     --color-bg-main: rgb(245, 245, 245);
     --color-primary: rgb(240, 84, 84);
     --color-text: rgb(51, 51, 51);
     --color-text-light: rgb(102, 102, 102);
     
-    /* Secciones */
     --color-bg-section: rgb(255, 255, 255);
     --color-border-section: rgb(238, 238, 238);
     --color-l-section-link-h: rgb(255, 255, 255);
     
-    /* Sombras */
     --shadow-header: rgba(0, 0, 0, 0.15);
     --shadow-section: rgba(0, 0, 0, 0.08);
     --shadow-section-h: rgba(0, 0, 0, 0.12);
     
-    /* Net específico */
     --color-avatar-gradient-start: rgb(240, 84, 84);
     --color-avatar-gradient-end: rgb(200, 70, 70);
     --shadow-card: rgba(240, 84, 84, 0.2);
 }
 
-/* Estilos globales del main */
 main {
     flex: 1;
     max-width: 1000px;
@@ -32,8 +27,7 @@ main {
     background: var(--color-bg-main);
 }
 
-/* Hero Section */
-.net-hero {
+.introduccion {
     text-align: center;
     background: var(--color-bg-section);
     padding: 3rem 2rem;
@@ -42,14 +36,14 @@ main {
     margin-bottom: 2rem;
 }
 
-.net-hero h1 {
+.introduccion h1 {
     color: var(--color-primary);
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
     font-weight: 700;
 }
 
-.net-hero p {
+.introduccion p {
     font-size: 1.1rem;
     color: var(--color-text-light);
     max-width: 36rem;
@@ -57,15 +51,13 @@ main {
     line-height: 1.7;
 }
 
-/* Red Compañeros Grid - CORREGIDO */
-.red-compañeros {
+.red {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-/* Tarjeta Compañero */
-.compañero-card {
+.compañero {
     background: var(--color-bg-section);
     padding: 1.5rem;
     border-radius: 0.75rem;
@@ -76,12 +68,12 @@ main {
     flex-direction: column;
 }
 
-.compañero-card:hover {
+.compañero:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px var(--shadow-card);
 }
 
-.compañero-avatar {
+.emoticono {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -96,7 +88,7 @@ main {
     flex-shrink: 0;
 }
 
-.compañero-nombre {
+.nombre {
     color: var(--color-primary);
     font-size: 1.3rem;
     font-weight: 700;
@@ -104,24 +96,24 @@ main {
     margin: 0 0 0.5rem 0;
 }
 
-.compañero-card p {
+.compañero p {
     color: var(--color-text-light);
     font-size: 0.95rem;
     margin: 0 0 1rem 0;
 }
 
-.compañero-card p:first-of-type {
+.compañero p:first-of-type {
     text-align: center;
     font-style: italic;
     color: var(--color-text-light);
 }
 
-.compañero-card p:last-of-type {
+.compañero p:last-of-type {
     flex-grow: 1;
     color: var(--color-text-light);
 }
 
-.compañero-link {
+.enlaces {
     display: block;
     background: var(--color-primary);
     color: var(--color-bg-section);
@@ -138,72 +130,9 @@ main {
     margin-top: auto;
 }
 
-.compañero-link:hover {
+.enlaces:hover {
     background: var(--color-bg-section);
     color: var(--color-primary);
     transform: scale(1.02);
     box-shadow: 0 8px 25px var(--shadow-card);
-}
-
-/* Sección */
-section {
-    background: var(--color-bg-section);
-    margin-bottom: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px var(--shadow-section);
-    border-top: 4px solid var(--color-primary);
-    transition: all 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px var(--shadow-section-h);
-}
-
-section h2 {
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--color-border-section);
-}
-
-section p {
-    color: var(--color-text);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-section strong {
-    color: var(--color-primary);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    main {
-        padding: 1rem;
-    }
-
-    .net-hero {
-        padding: 2rem 1rem;
-    }
-
-    .net-hero h1 {
-        font-size: 2rem;
-    }
-
-    .red-compañeros {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-
-    .compañero-card {
-        padding: 1rem;
-    }
-}
+}   
