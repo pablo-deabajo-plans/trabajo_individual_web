@@ -3,7 +3,7 @@
 # 1. Descripción de su trabajo.
 
 ## Pagina principal - Información general
-Al abrir el enlace te encuentras en esta pagina inicial, el index.html, que contiene un menu con enlaces en la parte superior de la pagina, un contenido con informacion de cada apartado propuesto, y un pie de pagina con el contacto
+Al abrir el enlace te encuentras en esta pagina inicial, el index.html, que contiene un menu con enlaces en la parte superior de la pagina, un contenido con informacion de cada apartado propuesto, y un pie de pagina con el contacto<br>
 Cada apartado en el contenido tiene tambien un enlace a su respectiva pagina. 
 
 ## Pagina Contacto
@@ -14,32 +14,31 @@ No envia un mensaje a ningun lado, ni correo ni aviso. Solo es la parte visual, 
 ## Pagina About me
 Esta pagina se distribuye en tres bloques como todas, encabezado, contenido, pie de pagina.
 En el encabezado tenemos diferentes enlaces, y el titulo de la pagina.
-En el contenido tenemos las siguientes secciones:
-- En un div: Una foto con forma de perfil, mi nombre y grado en un cuadrado que es una imagen de fondo
-- En tres section: un apartado que se compone de titulo parrafo y tabla
-- El siguiente de titulo, parrafo y divs con imagenes
-- Por ultimo, titulo, parrafo, divs con enlaces
+En el contenido tenemos las siguientes secciones:<br>
+- En un div: Una foto con forma de perfil, mi nombre y grado en un cuadrado que es una imagen de fondo<br>
+- En tres section: un apartado que se compone de titulo parrafo y tabla<br>
+- El siguiente de titulo, parrafo y divs con imagenes<br>
+- Por ultimo, titulo, parrafo, divs con enlaces<br>
 
 En el pie de pagina enlace a contacto y mi nombre
 
 ## Pagina Degree - Ingeniería Informática
-Esta pagina es para explicar la carrera, como proposito he puesto salidas y proyectos, y una lista de las materias del primer año. Por ultimo un apartado para la asignatura fundamentos de ingenieria informatica con un enlace a su pagina.
+Esta pagina es para explicar la carrera, como proposito he puesto salidas y proyectos, y una lista de las materias del primer año. Por ultimo un apartado para la asignatura fundamentos de ingenieria informatica con un enlace a su pagina.<br>
 Tambien, las asignaturas del primer cuatrimestre tienen un enlace de descarga con las Guias Docentes.
 
 ## Pagina Fii - Fundamentos de ingenieria informatica
-En esta pagina he puesto todo lo que venia en la Guia Docente del canvas. Con los siguientes apartados: contenido, objetivos y resultados de aprendizaje.
-Encabezado - menu con enlaces y titulo
+En esta pagina he puesto todo lo que venia en la Guia Docente del canvas. Con los siguientes apartados: contenido, objetivos y resultados de aprendizaje.<br>
+Encabezado - menu con enlaces y titulo<br>
 Pie de pagina - enlace a contacto y nombre
 
 ## Pagina Topic - Real Sporting de Gijón
-En la última página, he hablado sobre el Sporting de Gijon, no había indicaciones ni sugerencias asi que la página se divide en:
-Encabezado - titulo y menu con enlaces
-Contenido - 8 secciones en las que he puesto diferentes cosas, parrafos, jugando con los divs para las posiciones, texto con imagen de fondo, div con color de fondo
+En la última página, he hablado sobre el Sporting de Gijon, no había indicaciones ni sugerencias asi que la página se divide en:<br>
+Encabezado - titulo y menu con enlaces<br>
+Contenido - 8 secciones en las que he puesto diferentes cosas, parrafos, jugando con los divs para las posiciones, texto con imagen de fondo, div con color de fondo<br>
 Pie de pagina - enlace a contacto y nombre
 
 ## Pagina Net - Nuetra Red
-Enlaces a páginas de compañeros, 
-
+Enlaces a páginas de compañeros, se compone de 6 tarjetas para 6 enlaces de otras paginas. 
 
 # 2. Problemas durante el desarrollo.
 Durante el desarrollo he tenido varios problemillas, lo primero era que no me acordaba de como hacer los estilos como en el grado, he utilizado la pagina w3school para informarme de los atributos, posiciones, posicion grid, y diferentes aspectos. Tambien como referencia a los estilos he seguido la estructura que use en el proyecto de fin de grado con la etiqueta :root {} para establecer los colores de la pagina.
